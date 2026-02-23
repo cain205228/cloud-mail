@@ -1,6 +1,6 @@
 name = "cloud-mail"
 main = "src/index.js"
-compatibility_date = "2025-06-04"
+compatibility_date = "2026-02-23"
 keep_vars = true
 
 [observability]
@@ -31,7 +31,7 @@ crons = ["0 16 * * *"]	#定时任务每天晚上12点执行
 
 [vars]
 orm_log = false
-domain = "mail.791688.xyz"				#邮件域名可可配置多个 示例: ["example1.com","example2.com"]
+domain = ["mail.791688.xyz","m.791688.xyz"]				#邮件域名可可配置多个 示例: ["example1.com","example2.com"]
 admin = "kk@791688.xyz"				#管理员的邮箱	示例: admin@example.com
 jwt_secret = "Happyboss123"			#jwt令牌的密钥,随便填一串字符串
 
